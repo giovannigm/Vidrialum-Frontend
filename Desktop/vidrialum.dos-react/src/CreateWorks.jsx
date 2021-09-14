@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 
 
@@ -11,19 +12,16 @@ function CreateWorks() {
 
       const formData = new FormData();
 
+
       formData.append('image', image);
       formData.append('name', Name);
 
-      fetch('http://localhost:3000/works', {
-        method: 'POST',
-        headers:{
-            'Content-Type': 'application/json',
-            'token': localStorage.getItem("token"),
-        },
-        body: formData,
-        mode: 'cors'
-      })
+      console.log({image}, {formData})
+
+
+      axios.post('http://localhost:3000/works', formData, { headers: { token: localStorage.getItem('token')}});
     }
+
     return (
         <div>
             <section className="home">
@@ -36,8 +34,8 @@ function CreateWorks() {
                      onChange={(event) => setname(event.target.value)}/>
                 </div>
                 <div className="field">
-                    <label for="nombre">Foto</label>
-                    <input type="file" id="nombre" onChange={(event) => setimage(event.target?.files[0])}/>
+                    <label for="image">Foto</label>
+                    <input type="file" id="image" onChange={(event) => setimage(event.target?.files[0])}/>
                 </div>
                 <button id="enviar">Crear</button>
             </form>

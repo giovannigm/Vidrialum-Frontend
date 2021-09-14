@@ -15,8 +15,6 @@ import UpdateWorkPage from "../pages/UpdateWorkPage";
 export default function appRouters() {
   const userToken = localStorage.getItem("token");
 
-
-
   return (
     <Router>
       <Header />
@@ -26,7 +24,9 @@ export default function appRouters() {
         <Route path="/Company" component={CompanyPage} />
         <Route path="/Jobs" component={JobsPage} />
         <Route path="/Contact" component={ContactPage} />
-        {userToken && <Route path="/Updateworks" component={UpdateWorkPage} />}
+        {userToken && (
+          <Route path="/Updateworks/:id" component={UpdateWorkPage} />
+        )}
         {userToken && <Route path="/works" component={WorksPage} />}
         <Route path="/CreateWorks" component={CreateWork} />
         <Route exact path="/" component={HomePages} />

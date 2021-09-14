@@ -24,7 +24,7 @@ function Works() {
         <section className="products">
             <h3 className="title">Trabajos</h3>
             <div className="products-list">
-               {trabajos.map((trabajo) => <Work imagen={trabajo.image} nombre={trabajo.name} key={trabajo.id} />)} 
+               {trabajos.map((trabajo) => <Work imagen={trabajo.image} nombre={trabajo.name} key={trabajo.id} id={trabajo.id} />)} 
             </div>
         </section>
     )
