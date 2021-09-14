@@ -53,7 +53,7 @@ function Footer(){
           <div className="google-maps-frame">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.1901542569594!2d-56.04897008480124!3d-34.7759879741405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a028f3315a4079%3A0x8a2c35373ede2234!2sVidrialum!5e0!3m2!1ses-419!2suy!4v1619484438581!5m2!1ses-419!2suy"
-              allowfullscreen="true"
+              allowFullScreen={true}
               loading="lazy"
               title="Google Maps"
             ></iframe>

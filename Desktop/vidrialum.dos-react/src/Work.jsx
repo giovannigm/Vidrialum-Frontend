@@ -6,10 +6,10 @@ function Work(props) {
         <div className="product">
             <img src={props.imagen} alt=" foto Accesorio" />
             <h4>{props.nombre}</h4>
-            <Link to="/Updatework">
+            <Link to="/Updateworks">
                 <img className="icono" src={Edit} alt="editar"/>
             </Link>
-            <Link>
+            <Link to="/Updateworks">
                 <img className="icono" src={Trash} alt="trash" onClick={() => {console.log('hola mundo')}}/>
             </Link>
         </div>

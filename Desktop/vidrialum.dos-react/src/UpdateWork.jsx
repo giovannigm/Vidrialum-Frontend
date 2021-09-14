@@ -5,11 +5,11 @@ function UpdateWork() {
             <h3 className="sub-title">actualizar trabajo</h3>
             <form className="form">
                 <div className="field">
-                    <label for="nombre">Nombre</label>
+                    <label htmlFor="nombre">Nombre</label>
                     <input type="text" id="nombre" placeholder="Nombre"/>
                 </div>
                 <div className="field">
-                    <label for="nombre">Foto</label>
+                    <label htmlFor="nombre">Foto</label>
                     <input type="file" id="nombre" placeholder="imagen"/>
                 </div>
                 <button id="enviar">Crear</button>
