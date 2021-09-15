@@ -5,7 +5,7 @@
 
 - Ver todos los trabajos. `/jobs`
 - Login, con user y contraseña. `/admin/login`
-- Formulario de contacto, envia mail con datos de contacto.
+- Formulario de contacto, envia mail con datos de contacto. `/Contact`
 
 ### Privados
 - Ver los trabajos y eliminarlos '/admin/works'
