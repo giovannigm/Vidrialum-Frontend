@@ -40,7 +40,7 @@ function UpdateWork() {
                     <label htmlFor="nombre">Foto</label>
                     <input type="file" id="nombre" placeholder="imagen" onChange={(event) => setimage(event.target?.files[0])}/>
                 </div>
-                <button id="enviar">Crear</button>
+                <button id="enviar">actualizar</button>
             </form>
             </section>
         </div>
